@@ -5,7 +5,7 @@ import Tree from "@/components/tree";
 const treeData = [
   {
     key: "0",
-    label: "Documents",
+    label: "Music",
     children: [
       {
         key: "0-0",
@@ -25,7 +25,7 @@ const treeData = [
   },
   {
     key: "1",
-    label: "Desktop",
+    label: "Video",
     children: [
       {
         key: "1-0",
@@ -39,15 +39,34 @@ const treeData = [
   },
   {
     key: "2",
-    label: "Downloads",
-    children: [],
+    label: "Text",
+    children: [
+      {
+        key: "1-0",
+        label: "document1.doc",
+      }
+    ],
   },
+  {
+    key: "1",
+    label: "Picture",
+    children: [
+      {
+        key: "1-0",
+        label: "document1.doc",
+      },
+      {
+        key: "0-0",
+        label: "documennt-2.doc",
+      },
+    ],
+  }
 ];
 
 export default function Home() {
   return (
     // "flex min-h-screen flex-col items-center justify-between p-24"
-    <main className="flex min-h-screen flex-col items-left p-4">
+    <main className="flex min-h-screen flex-col items-center p-4">
       <h1>React Tree View</h1>
       <Tree treeData={treeData} />
     </main>
