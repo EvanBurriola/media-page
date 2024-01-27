@@ -78,7 +78,7 @@ export default function Home() {
       return (
         // "flex min-h-screen flex-col items-center justify-between p-24"
         <main className="flex min-h-screen flex-col items-center p-4">
-          <div onClick={handleClick} className="mb-3 flex flex-row">
+          <div onClick={handleClick} className="mb-3 flex flex-row cursor-pointer select-none">
             <h1>Media Breakdown</h1>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
@@ -91,7 +91,7 @@ export default function Home() {
         return (
           // "flex min-h-screen flex-col items-center justify-between p-24"
           <main className="flex min-h-screen flex-col items-center p-4">
-            <div onClick={handleClick} className="mb-3 flex flex-row">
+            <div onClick={handleClick} className="mb-3 flex flex-row cursor-pointer select-none">
               <h1>Media Breakdown</h1>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />

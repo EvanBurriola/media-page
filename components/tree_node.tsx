@@ -24,7 +24,7 @@ export default function TreeNode({ node, expand }: NodeProps,) {
   // Full expand/collapse
   useEffect(() =>{
     if(expand == true){
-      setShowChildren(true);
+        setShowChildren(true);
     } else{
       setShowChildren(false);
     }
@@ -38,7 +38,7 @@ export default function TreeNode({ node, expand }: NodeProps,) {
             <span className="cursor-pointer select-none">{label}</span>
           </div>
           <ul className="pl-3 border-l border-black">
-            {showChildren && <Tree treeData={children} />}
+            {showChildren && <Tree treeData={children} expand={expand} />}
           </ul>
         </>
       );
@@ -50,7 +50,7 @@ export default function TreeNode({ node, expand }: NodeProps,) {
             <span className="select-none">{label}</span>
           </div>
           <ul className="pl-3 border-l border-black">
-            {showChildren && <Tree treeData={children} />}
+            {showChildren && <Tree treeData={children} expand={expand} />}
           </ul>
         </>
       );
@@ -64,7 +64,7 @@ export default function TreeNode({ node, expand }: NodeProps,) {
           <span className="cursor-pointer select-none transition-all duration-300 ease-in hover:text-cyan-600 hover:font-bold"> {label}</span>
         </div>
         <ul className="pl-3 border-l border-black">
-          {showChildren && <Tree treeData={children} />}
+          {showChildren && <Tree treeData={children} expand={expand} />}
         </ul>
       </>
     );
