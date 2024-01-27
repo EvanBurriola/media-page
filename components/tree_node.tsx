@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Tree from "./tree";
 
 export type NodeProps = {
@@ -6,19 +6,29 @@ export type NodeProps = {
     key: string;
     label: string;
     children: NodeProps[]
-  }
+  },
+  expand:boolean
 };
 
 
-export default function TreeNode({ node }: NodeProps) {
+export default function TreeNode({ node, expand }: NodeProps,) {
   const { key, children, label } = node;
 
   // Have children nodes hidden by default
-  const [showChildren, setShowChildren] = useState(false);
+  const [showChildren, setShowChildren] = useState(expand);
 
   const handleClick = () => {
     setShowChildren(!showChildren);
   };
+
+  // Full expand/collapse
+  useEffect(() =>{
+    if(expand == true){
+      setShowChildren(true);
+    } else{
+      setShowChildren(false);
+    }
+  }, [expand])
 
   const componentReturn = (svg: string) => {
     if (svg.length == 0) {
