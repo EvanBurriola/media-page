@@ -18,8 +18,12 @@ const config: Config = {
         'flax': '#f3de8a',
         'coral-pink': '#eb9486',
         'cool-gray': '#7E7F9A',
-        'cadet-gray': '#97A7B3'
+        'cadet-gray': '#97A7B3',
+        'red-ass': '#8C2155'
       },
+      fontFamily: {
+        sans: ['var(--font-sixtyfour)']
+      }
     },
   },
   plugins: [],

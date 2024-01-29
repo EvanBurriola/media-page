@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Button from "@/components/button";
 import Tree from "@/components/tree";
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 const treeData = [
   {
@@ -73,10 +73,17 @@ export default function MediaTree() {
       setExpand(!expand);
     };
 
+    // useEffect(() =>{
+    //   if(expand == true){
+    //       setExpand(true);
+    //   } else{
+    //     setExpand(false);
+    //   }
+    // }, [expand])
+
   const treeComponent = (expand : boolean) => {
     if(expand == true){
       return (
-        // "flex min-h-screen flex-col items-center justify-between p-24"
         <main className="flex min-h-screen flex-col items-left p-4">
           <div className="mb-3 flex flex-row">
             <h1 className="select-none drop-shadow-2xl text-black">Media Breakdown</h1>
@@ -89,7 +96,6 @@ export default function MediaTree() {
       );  
     } else{
         return (
-          // "flex min-h-screen flex-col items-center justify-between p-24"
           <main className="flex min-h-screen flex-col items-left p-4">
             <div className="mb-3 flex flex-row">
               <h1 className="select-none text-black">Media Breakdown</h1>

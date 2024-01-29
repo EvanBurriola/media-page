@@ -15,7 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="notranslate" translate="no">
+      <meta name="google" content="notranslate" />
       <body className={inter.className}>{children}</body>
     </html>
   );

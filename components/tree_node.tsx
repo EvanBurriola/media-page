@@ -10,7 +10,6 @@ export type NodeProps = {
   expand:boolean
 };
 
-
 export default function TreeNode({ node, expand }: NodeProps) {
   const { key, children, label } = node;
 
@@ -19,6 +18,7 @@ export default function TreeNode({ node, expand }: NodeProps) {
 
   const handleClick = () => {
     setShowChildren(!showChildren);
+    // setExpand()
   };
 
   // Full expand/collapse
