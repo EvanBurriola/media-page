@@ -61,7 +61,7 @@ export default function TreeNode({ node, expand }: NodeProps) {
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer">
             <path strokeLinecap="round" strokeLinejoin="round" d={svg} />
           </svg>
-          <span className="cursor-pointer select-none transition-all duration-300 ease-in text-white hover:text-cool-gray hover:font-bold text-3xl"> {label}</span>
+          <span className="cursor-pointer select-none transition-all duration-300 ease-in text-black hover:font-bold text-3xl"> {label}</span>
         </div>
         <ul className="pl-3 border-l border-black">
           {showChildren && <Tree treeData={children} expand={expand} />}
