@@ -35,7 +35,7 @@ export default function TreeNode({ node, expand }: NodeProps) {
       return (
         <>
           <div onClick={handleClick} className="mb-3">
-            <span className="cursor-pointer select-none text-2xl">{label}</span>
+            <span className="cursor-pointer select-none text-2xl text-white">{label}</span>
           </div>
           <ul className="pl-3 border-l border-black">
             {showChildren && <Tree treeData={children} expand={expand} />}
@@ -47,7 +47,7 @@ export default function TreeNode({ node, expand }: NodeProps) {
       return (
         <>
           <div onClick={handleClick} className="mb-3">
-            <span className="select-none text-xl">{label}</span>
+            <span className="select-none text-xl text-white">{label}</span>
           </div>
           <ul className="pl-3 border-l border-black">
             {showChildren && <Tree treeData={children} expand={expand} />}
@@ -58,10 +58,10 @@ export default function TreeNode({ node, expand }: NodeProps) {
     return (
       <>
         <div onClick={handleClick} className="mb-3 flex flex-row">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer text-white">
             <path strokeLinecap="round" strokeLinejoin="round" d={svg} />
           </svg>
-          <span className="cursor-pointer select-none transition-all duration-300 ease-in text-black hover:font-bold text-3xl"> {label}</span>
+          <span className="cursor-pointer select-none transition-all duration-300 ease-in text-white hover:font-bold text-3xl"> {label}</span>
         </div>
         <ul className="pl-3 border-l border-black">
           {showChildren && <Tree treeData={children} expand={expand} />}

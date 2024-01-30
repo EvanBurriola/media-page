@@ -1,6 +1,5 @@
 'use client'
-import Image from "next/image";
-import Button from "@/components/button";
+import Link from "next/link";
 import Tree from "@/components/tree";
 import React, { useState, useEffect } from "react"
 
@@ -73,17 +72,33 @@ export default function MediaTree() {
       setExpand(!expand);
     };
 
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() =>{
+      if(loaded == true){
+          setLoaded(true);
+      } else{
+        setLoaded(true);
+      }
+    }, [loaded])
+
   const treeComponent = (expand : boolean) => {
       return (
-        <main className="flex min-h-screen flex-col items-left p-4">
-          <div className="mb-3 flex flex-row">
-            <h1 className="select-none drop-shadow-2xl text-black">Media Breakdown</h1>
-            <svg onClick={handleClick} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer select-none">
-            <path strokeLinecap="round" strokeLinejoin="round" d={expand == true ? "m4.5 15.75 7.5-7.5 7.5 7.5" : "m19.5 8.25-7.5 7.5-7.5-7.5" } />
-            </svg>
+        <>
+          <div className="w-screen absolute -z-10 blur-3xl">
+            <img src="innerChamber.jpg" alt="Inner Chamber" className="object-fill w-screen h-screen absolute saturate-50"></img>
           </div>
-            <Tree treeData={treeData} expand={expand} />
-        </main>
+          <main className="flex min-h-screen flex-col items-center p-4">
+            <div className="mb-3 flex flex-row">
+              <Link href='/' className="mt-4 mr-4 w-20 h-6 text-center text-white hover:bg-blue-800 bg-blue-600 transition-colors duration-300 rounded-xl drop-shadow-[0_8.2px_1.2px_rgba(0,0,0,0.8)] select-none">Home</Link>
+              <h1 className="select-none drop-shadow-2xl text-white text-6xl">Media Breakdown</h1>
+              <svg onClick={handleClick} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 cursor-pointer select-none mt-6 text-white">
+              <path strokeLinecap="round" strokeLinejoin="round" d={expand == true ? "m4.5 15.75 7.5-7.5 7.5 7.5" : "m19.5 8.25-7.5 7.5-7.5-7.5" } />
+              </svg>
+            </div>
+              <Tree treeData={treeData} expand={expand} />
+          </main>
+        </>
       );  
   }
 

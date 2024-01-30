@@ -14,12 +14,6 @@ const sixtyfour = localFont({
 export default function NameBanner() {
   const [loaded, setLoaded] = useState(false);
 
-  const handleLoad = () => {
-    setLoaded(true);
-  }
-
-  window.addEventListener('load', handleLoad);
-
   useEffect(() =>{
     if(loaded == true){
         setLoaded(true);
