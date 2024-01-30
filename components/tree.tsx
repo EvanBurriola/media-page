@@ -9,7 +9,7 @@ export default function Tree({ treeData, expand}: any) {
 
   return (
     <>
-    <div className="">
+    <div>
       <ul>
         {treeData.map((node: any) => (
           <TreeNode node={node} key={node.key} expand={expand}/>

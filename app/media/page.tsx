@@ -10,18 +10,101 @@ const treeData = [
     children: [
       {
         key: "0-0",
-        label: "Document 1-1",
+        label: "Streaming",
         children: [
           {
             key: "0-1-1",
-            label: "Document-0-1.doc",
+            label: "Apple Music",
+            children: [
+              {
+                key: "0-1-1-1",
+                label: "Sweet Pill",
+              },
+              {
+                key: "0-1-1-2",
+                label: "Sianvar",
+              },
+              {
+                key: "0-1-1-3",
+                label: "Hail the Sun",
+              },
+              {
+                key: "0-1-1-4",
+                label: "Jeff Buckley",
+              },
+              {
+                key: "0-1-1-5",
+                label: "Narco Debut",
+              },
+            ]
           },
           {
             key: "0-1-2",
-            label: "Document-0-2.doc",
-          },
+            label: "Vinyl",
+            children: [
+              {
+                key: "0-1-2-1",
+                label: "The Beatles",
+              },
+              {
+                key: "0-1-2-2",
+                label: "Kendrick Lamar",
+              },
+              {
+                key: "0-1-2-3",
+                label: "Silversun Pickups",
+              },
+              {
+                key: "0-1-2-4",
+                label: "Billie Eilish",
+              },
+              {
+                key: "0-1-2-5",
+                label: "Pinegrove",
+              },
+            ]
+          }
         ],
       },
+      {
+        key: "0-1",
+        label: "Performing",
+        children: [
+          {
+            key: "0-1-1",
+            label: "Melanchology",
+            children: [
+              {
+                key: "0-1-1-1",
+                label: "Guitarist"
+              },              
+              {
+                key: "0-1-1-2",
+                label: "Drummer"
+              },
+            ]
+          },
+          {
+            key: "0-1-2",
+            label: "False Advert",
+            children: [
+              {
+                key: "0-1-2-1",
+                label: "Vocalist"
+              },              
+              {
+                key: "0-1-2-2",
+                label: "Guitarist"
+              },
+              {
+                key: "0-1-2-3",
+                label: "Writer"
+              },
+            ]
+          }
+        ]       
+      }
+      
     ],
   },
   {
