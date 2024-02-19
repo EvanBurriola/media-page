@@ -28,6 +28,7 @@ export default function Home() {
 
           <Link href='/media' className="flex justify-center mx-12 mt-4 text-white hover:bg-blue-800 bg-blue-600 transition-colors duration-300 rounded-3xl drop-shadow-[0_8.2px_1.2px_rgba(0,0,0,0.8)] select-none">Media Use Tree</Link>
           
+          <Link href='/peers' className="flex justify-center mx-12 mt-4 text-white hover:bg-blue-800 bg-blue-600 transition-colors duration-300 rounded-3xl drop-shadow-[0_8.2px_1.2px_rgba(0,0,0,0.8)] select-none">Assignment 2</Link>
         </div>
 
         <img src="newOrleans.jpg" className="flex object-cover mr-32 rounded-full"></img>
