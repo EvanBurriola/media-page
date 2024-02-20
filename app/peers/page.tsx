@@ -138,7 +138,7 @@ export default function PeersPage(){
               <div className="w-fit h-fit mx-12 bg-white bg-opacity-40">
 
                   {fantasyPeers.map((elem: any) => (
-                    <ul>
+                    <ul key={elem.key}>
                       <Link href={elem.link} target="_blank" className="hover:font-bold transition-all duration-500">{elem.name}</Link>
                     </ul>
                   ))}
@@ -146,7 +146,7 @@ export default function PeersPage(){
                 
               <div className="w-fit h-fit mx-12 bg-white bg-opacity-40">
                 {gamingPeers.map((elem: any) => (
-                  <ul>
+                  <ul key={elem.key}>
                     <Link href={elem.link} target="_blank" className="hover:font-bold transition-all duration-500">{elem.name}</Link>
                   </ul>
                 ))}
@@ -154,7 +154,7 @@ export default function PeersPage(){
 
               <div className="w-fit h-fit mx-12 bg-white bg-opacity-40">
                 {navigatingContent.map((elem: any) => (
-                  <ul>
+                  <ul key={elem.key}>
                     <Link href={elem.link} target="_blank" className="hover:font-bold transition-all duration-500">{elem.name}</Link>
                   </ul>
                 ))}
