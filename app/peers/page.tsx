@@ -114,20 +114,15 @@ export default function PeersPage(){
             <div className="flex h-[80vh] flex-col items-center place-content-between p-4 gap-y-3">
               <div>
                 <h2 className="text-center text-white text-4xl font-bold drop-shadow-[0_8.2px_1.2px_rgba(0,0,0,0.8)] select-none">Fantasy Texts</h2>
-                <p className=" w-96 h-fit mx-12 p-2 bg-white bg-opacity-40 select-none">I found a considerable amount of people 
-                that were interested in fantasy literature. This was interesting to me as I also read fantasy novels and I didn't realize
-                how many of my peers did as well.</p>
+                <p className=" w-96 h-fit mx-12 p-2 bg-white bg-opacity-40 select-none">I found a considerable amount of people that were interested in fantasy literature. This was interesting to me as I also read fantasy novels and I didn't realize how many of my peers did as well.</p>
               </div>
               <div>
                 <h2 className="text-center text-white text-4xl font-bold drop-shadow-[0_8.2px_1.2px_rgba(0,0,0,0.8)] select-none">Interactive Media</h2>
-                <p className="w-96 h-fit mx-12 p-2 bg-white bg-opacity-40 select-none">There were a considerable amount of people that consumed video game content.
-                There were many genres and methods of this consumption, but I think it is interesting how prevelant it is as an interactive media.</p>
+                <p className="w-96 h-fit mx-12 p-2 bg-white bg-opacity-40 select-none">There were a considerable amount of people that consumed video game content. There were many genres and methods of this consumption, but I think it is interesting how prevelant it is as an interactive media.</p>
               </div>
               <div>
                 <h2 className="text-center text-white text-4xl font-bold drop-shadow-[0_8.2px_1.2px_rgba(0,0,0,0.8)] select-none">Shared Difficulty</h2>
-                <p className="w-96 h-fit mx-12 p-2 bg-white bg-opacity-40 select-none">Many people said that their struggles with media had to do with navigation.
-                Many people expressed the abundance of media in all forms and how it can be disorienting and difficult
-                to navigate at times.</p>
+                <p className="w-96 h-fit mx-12 p-2 bg-white bg-opacity-40 select-none">Many people said that their struggles with media had to do with navigation. Many people expressed the abundance of media in all forms and how it can be disorienting and difficult to navigate at times.</p>
               </div>
 
 
