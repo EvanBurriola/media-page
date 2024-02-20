@@ -3,27 +3,27 @@ import Link from "next/link";
 
 const fantasyPeers = [
   {
-    key: '1',
+    key: '1-1',
     name: 'Kavya Kotra',
     link: 'https://saiskotra24.wixsite.com/kavya'
   },
   {
-    key: '2',
+    key: '1-2',
     name: 'Juliana Leano',
     link: 'https://cs412jleano.xyz/cs445/assingmentOne.html'
   },
   {
-    key: '3',
+    key: '1-3',
     name: 'Kimberly Chen',
     link: 'https://kimberlykchen.wixsite.com/kimchencsce445'
   },
   {
-    key: '4',
+    key: '1-4',
     name: 'Liam Benkel',
     link: 'https://liambenkel.github.io/'
   },
   {
-    key: '5',
+    key: '1-5',
     name: 'Miguel Garcia',
     link: 'https://migugi347.github.io/'
   },
@@ -31,42 +31,42 @@ const fantasyPeers = [
 
 const gamingPeers = [
   {
-    key: '1',
+    key: '2-1',
     name: 'Mateo Lopez',
     link: 'https://people.tamu.edu/~jose_montenegro/'
   },
   {
-    key: '2',
+    key: '2-2',
     name: 'Juliana Leano',
     link: 'https://cs412jleano.xyz/cs445/assingmentOne.html'
   },
   {
-    key: '3',
+    key: '2-3',
     name: 'Akhil Mathew',
     link: 'https://mathewakhil.github.io/'
   },
   {
-    key: '4',
+    key: '2-4',
     name: 'Prachi Miyan',
     link: 'https://prachinewmedia.wordpress.com/2024/01/30/16/'
   },
   {
-    key: '5',
+    key: '2-5',
     name: 'Benson Nguyen',
     link: 'https://628005910.github.io/'
   },
   {
-    key: '6',
+    key: '2-6',
     name: 'Ritika Nigam',
     link: 'https://ritikanigam.wixsite.com/assignment1'
   },
   {
-    key: '7',
+    key: '2-7',
     name: 'Alan Perez',
     link: 'https://przalan12.github.io/'
   },
   {
-    key: '8',
+    key: '2-8',
     name: 'Victor Phan',
     link: 'https://move2slowly.github.io/single.html'
   }
@@ -74,27 +74,27 @@ const gamingPeers = [
 
 const navigatingContent = [
   {
-    key: '1',
+    key: '3-1',
     name: 'Bella Woliver',
     link: 'https://people.tamu.edu/~bellawoliver/csce445/home.html'
   },
   {
-    key: '2',
+    key: '3-2',
     name: 'Zihao Wang',
     link: 'https://howard-wang-323.github.io/'
   },
   {
-    key: '3',
+    key: '3-3',
     name: 'Prachi Surbhi',
     link: 'https://sites.google.com/tamu.edu/psurbhi/home'
   },
   {
-    key: '4',
+    key: '3-4',
     name: 'Romaanchan Skanda',
     link: 'https://sites.google.com/tamu.edu/romey-media-journey/home'
   },
   {
-    key: '5',
+    key: '3-5',
     name: 'Uma Sarkar',
     link: 'https://umaesarkar.wixsite.com/home'
   },
