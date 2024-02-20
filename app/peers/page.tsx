@@ -114,7 +114,7 @@ export default function PeersPage(){
             <div className="flex h-[80vh] flex-col items-center place-content-between p-4 gap-y-3">
               <div>
                 <h2 className="text-center text-white text-4xl font-bold drop-shadow-[0_8.2px_1.2px_rgba(0,0,0,0.8)] select-none">Fantasy Texts</h2>
-                <p className=" w-96 h-fit mx-12 p-2 bg-white bg-opacity-40 select-none">I found a considerable amount of people that were interested in fantasy literature. This was interesting to me as I also read fantasy novels and I didn't realize how many of my peers did as well.</p>
+                <p className=" w-96 h-fit mx-12 p-2 bg-white bg-opacity-40 select-none">I found a considerable amount of people that were interested in fantasy literature. This was interesting to me as I also read fantasy novels and I didn&apos;t realize how many of my peers did as well.</p>
               </div>
               <div>
                 <h2 className="text-center text-white text-4xl font-bold drop-shadow-[0_8.2px_1.2px_rgba(0,0,0,0.8)] select-none">Interactive Media</h2>
